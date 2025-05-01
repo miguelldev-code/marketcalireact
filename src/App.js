@@ -1,10 +1,15 @@
-import React from "react";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Footer from "./components/Footer";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./css/styles.css";
 
 function App() {
   return (
     <div>
-      <h1>Hola, React</h1>
-      <button>Boton</button>
+      <Navbar />
+      <Home />
+      <Footer />
     </div>
   );
 }
