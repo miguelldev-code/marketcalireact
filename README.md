@@ -4,60 +4,45 @@ Sistema de gestión administrativa para supermercados con funcionalidades de ven
 
 ---
 
-## 📦 Tecnologías
+## Tecnologías
 
-- **Frontend:** React, TailwindCSS, Axios, React Router, Zustand o Redux
-- **Backend:** Spring Boot, Spring Data JPA, Spring Security, JWT
-- **Base de datos:** PostgreSQL o MySQL
+- **Frontend:** React, Boostrap, React Router
+- **Backend:** Spring Boot (Pendiente)
+- **Base de datos:** PostgreSQL o MySQL (Pendiente)
 - **Otros:** Docker (opcional), Lector de códigos de barras (integración futura)
 
 ---
 
-## 🎯 Objetivo del Proyecto
+## Objetivo del Proyecto
 
 Desarrollar una aplicación web que permita la gestión integral de un supermercado, incluyendo ventas, control de inventario, administración de usuarios, generación de reportes y facturación al cliente.
 
 ---
 
-## ⚙️ Funcionalidades Principales
+##  Funcionalidades Principales
 
-### 👩‍💼 Administrador
+### Administrador
 
 - Gestionar usuarios y roles
 - Asignar permisos a empleados
 - Visualizar reportes de ventas
 - Realizar backups periódicos
 
-### 👨‍💻 Empleado
+### Empleado
 
 - Registrar productos vendidos
 - Gestionar y visualizar inventario
 - Procesar compras con lector de código de barras
 - Generar facturación para el cliente
 
-### 👥 Cliente
+### Cliente
 
 - Visualizar productos y su facturación
 - Ver resumen de su compra antes del pago
 
 ---
 
-## 🗂️ Estructura del Repositorio
-
-marketcali/
-├── backend/ # Proyecto Spring Boot
-│ ├── src/main/java/
-│ ├── src/main/resources/
-│ └── pom.xml
-├── frontend/ # Proyecto React
-│ ├── public/
-│ ├── src/
-│ └── package.json
-└── README.md
-
----
-
-## 🧪 Casos de Uso (Resumen)
+## Casos de Uso (Resumen)
 
 1. **Administrar el software**: agregar/modificar usuarios y asignar permisos
 2. **Gestionar ventas**: registro y control de productos vendidos
@@ -68,7 +53,7 @@ marketcali/
 
 ---
 
-## 🔐 Roles de Usuario
+## Roles de Usuario
 
 | Rol           | Permisos                                                                   |
 | ------------- | -------------------------------------------------------------------------- |
@@ -78,67 +63,47 @@ marketcali/
 
 ---
 
-## 🚀 Cómo Ejecutar el Proyecto
+## Cómo Ejecutar el Proyecto
 
-### Backend - Spring Boot
+### Backend - Spring Boot (Pendiente)
 
-````bash
 cd backend
-./mvnw spring-boot:run
-
-
-## 🚀 Cómo Ejecutar el Proyecto
-
-### Backend - Spring Boot
 
 ```bash
-cd backend
 ./mvnw spring-boot:run
+```
 
-Frontend - React
-bash
-Copiar
-Editar
+### Frontend - React
+
+```bash
 cd frontend
 npm install
-npm run dev
+npm start
 Asegúrate de tener configuradas las variables de entorno para la conexión a la base de datos y las APIs.
+```
 
-💡 Requisitos del Sistema
-Java 17
+## Requisitos del Sistema
 
-Node.js 18+
+- Java 17
+- Node.js 18+
+- PostgreSQL o MySQL
+- Docker (opcional)
 
-PostgreSQL o MySQL
+## Pendientes y Mejoras Futuras
 
-Docker (opcional)
+- Integración con métodos de pago
+- Registro y autenticación de clientes
+- Sistema de fidelización
+- Panel de estadísticas gráficas
+- Soporte multiusuario simultáneo (más de 15 usuarios)
 
-📈 Pendientes y Mejoras Futuras
-Integración con métodos de pago
-
-Registro y autenticación de clientes
-
-Sistema de fidelización
-
-Panel de estadísticas gráficas
-
-Soporte multiusuario simultáneo (más de 15 usuarios)
-
-👨‍💻 Autores y Colaboradores
+## Autores y Colaboradores
 Miguel Ángel Ortiz Escobar
 
-Proyecto SENA – Redes y Seguridad
-
+Proyecto SENA – Analisis y Desarrollo de software 
 Instructor: Diego Alexander Campiño Toro
 
-📄 Licencia
+## Licencia
 Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más información.
 
-yaml
-Copiar
-Editar
-
----
-
-¿Te gustaría que genere también la estructura inicial del proyecto o te ayudo a crear algún archivo como `package.json`
-````
+```
