@@ -28,6 +28,11 @@ function Navbar() {
           >
             <ul className="navbar-nav">
               <li className="nav-item">
+                <Link to="/" className="nav-link">
+                  Inicio
+                </Link>
+              </li>
+              <li className="nav-item">
                 <Link to="/products" className="nav-link">
                   Productos
                 </Link>
