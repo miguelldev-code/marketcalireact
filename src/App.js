@@ -1,16 +1,25 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
 import Footer from "./components/Footer";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./css/styles.css";
+import Home from "./pages/Home";
+import Productos from "./pages/Productos";
+import Contacto from "./pages/Contacto";
+import Login from "./pages/Login";
 
 function App() {
   return (
-    <div>
+    <Router>
       <Navbar />
-      <Home />
+      <main className="py-4">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/productos" element={<Productos />} />
+          <Route path="/contacto" element={<Contacto />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </main>
       <Footer />
-    </div>
+    </Router>
   );
 }
 
