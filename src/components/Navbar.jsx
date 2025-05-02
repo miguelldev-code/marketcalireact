@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo3.png";
 
 function Navbar() {
   return (
@@ -7,11 +7,7 @@ function Navbar() {
       <nav className="navbar navbar-expand-lg bg-primary navbar-dark">
         <div className="container">
           <Link to="/" className="navbar-brand">
-            <img
-              src={logo}
-              alt="MarketCali Logo"
-              className="me-2 img-thumbnail"
-            />
+            <img src={logo} alt="MarketCali Logo" className="" />
             MarketCali
           </Link>
           <button
