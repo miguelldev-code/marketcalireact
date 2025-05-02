@@ -1,70 +1,144 @@
-# Getting Started with Create React App
+# 🛒 MarketCali
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Sistema de gestión administrativa para supermercados con funcionalidades de ventas, inventario, usuarios y facturación. Desarrollado con tecnologías modernas: **React** en el frontend y **Spring Boot** en el backend.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📦 Tecnologías
 
-### `npm start`
+- **Frontend:** React, TailwindCSS, Axios, React Router, Zustand o Redux
+- **Backend:** Spring Boot, Spring Data JPA, Spring Security, JWT
+- **Base de datos:** PostgreSQL o MySQL
+- **Otros:** Docker (opcional), Lector de códigos de barras (integración futura)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🎯 Objetivo del Proyecto
 
-### `npm test`
+Desarrollar una aplicación web que permita la gestión integral de un supermercado, incluyendo ventas, control de inventario, administración de usuarios, generación de reportes y facturación al cliente.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ⚙️ Funcionalidades Principales
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 👩‍💼 Administrador
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Gestionar usuarios y roles
+- Asignar permisos a empleados
+- Visualizar reportes de ventas
+- Realizar backups periódicos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 👨‍💻 Empleado
 
-### `npm run eject`
+- Registrar productos vendidos
+- Gestionar y visualizar inventario
+- Procesar compras con lector de código de barras
+- Generar facturación para el cliente
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 👥 Cliente
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Visualizar productos y su facturación
+- Ver resumen de su compra antes del pago
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🗂️ Estructura del Repositorio
 
-## Learn More
+marketcali/
+├── backend/ # Proyecto Spring Boot
+│ ├── src/main/java/
+│ ├── src/main/resources/
+│ └── pom.xml
+├── frontend/ # Proyecto React
+│ ├── public/
+│ ├── src/
+│ └── package.json
+└── README.md
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🧪 Casos de Uso (Resumen)
 
-### Code Splitting
+1. **Administrar el software**: agregar/modificar usuarios y asignar permisos
+2. **Gestionar ventas**: registro y control de productos vendidos
+3. **Facturación**: impresión de facturas con desglose por producto
+4. **Visualización de compra**: mostrar productos al cliente en pantalla
+5. **Inventario**: organización por categoría, marca, fecha, etc.
+6. **Reportes**: generación mensual de reportes de ventas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🔐 Roles de Usuario
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+| Rol           | Permisos                                                                   |
+| ------------- | -------------------------------------------------------------------------- |
+| Administrador | Gestión total del sistema, control de usuarios, acceso a todos los módulos |
+| Empleado      | Gestión de ventas, facturación, inventario                                 |
+| Cliente       | Solo visualización de su compra y factura                                  |
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🚀 Cómo Ejecutar el Proyecto
 
-### Advanced Configuration
+### Backend - Spring Boot
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+````bash
+cd backend
+./mvnw spring-boot:run
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🚀 Cómo Ejecutar el Proyecto
 
-### `npm run build` fails to minify
+### Backend - Spring Boot
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+cd backend
+./mvnw spring-boot:run
+
+Frontend - React
+bash
+Copiar
+Editar
+cd frontend
+npm install
+npm run dev
+Asegúrate de tener configuradas las variables de entorno para la conexión a la base de datos y las APIs.
+
+💡 Requisitos del Sistema
+Java 17
+
+Node.js 18+
+
+PostgreSQL o MySQL
+
+Docker (opcional)
+
+📈 Pendientes y Mejoras Futuras
+Integración con métodos de pago
+
+Registro y autenticación de clientes
+
+Sistema de fidelización
+
+Panel de estadísticas gráficas
+
+Soporte multiusuario simultáneo (más de 15 usuarios)
+
+👨‍💻 Autores y Colaboradores
+Miguel Ángel Ortiz Escobar
+
+Proyecto SENA – Redes y Seguridad
+
+Instructor: Diego Alexander Campiño Toro
+
+📄 Licencia
+Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más información.
+
+yaml
+Copiar
+Editar
+
+---
+
+¿Te gustaría que genere también la estructura inicial del proyecto o te ayudo a crear algún archivo como `package.json`
+````
