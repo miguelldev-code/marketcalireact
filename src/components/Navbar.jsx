@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 
 function Navbar() {
@@ -5,14 +6,14 @@ function Navbar() {
     <header className="bg-primary text-white py-3">
       <nav className="navbar navbar-expand-lg bg-primary navbar-dark">
         <div className="container">
-          <a href="/" className="navbar-brand">
+          <Link to="/" className="navbar-brand">
             <img
               src={logo}
               alt="MarketCali Logo"
               className="me-2 img-thumbnail"
             />
             MarketCali
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -27,19 +28,19 @@ function Navbar() {
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a href="/productos" className="nav-link">
+                <Link to="/productos" className="nav-link">
                   Productos
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="/contactos" className="nav-link">
-                  Contacto
-                </a>
+                <Link to="/about" className="nav-link">
+                  ¿Quiénes Somos?
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="/login" className="nav-link">
+                <Link to="/login" className="nav-link">
                   Iniciar Sesión
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
