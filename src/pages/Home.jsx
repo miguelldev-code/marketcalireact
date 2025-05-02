@@ -41,19 +41,19 @@ function Home() {
         <h2 className="mb-4">Usuarios del sistema</h2>
         <div className="row text-center">
           <div className="col-md-4 mb-3">
-            <h4>👨‍💼 Jefe/Administrador</h4>
+            <h4>Jefe/Administrador</h4>
             <p>
               Gestiona todo el software: registros, permisos y configuraciones.
             </p>
           </div>
           <div className="col-md-4 mb-3">
-            <h4>👩‍💻 Empleado</h4>
+            <h4>Empleado</h4>
             <p>
               Registra productos, genera facturas y lleva reportes mensuales.
             </p>
           </div>
           <div className="col-md-4 mb-3">
-            <h4>🛒 Cliente</h4>
+            <h4>Cliente</h4>
             <p>Visualiza los productos comprados y recibe su factura final.</p>
           </div>
         </div>

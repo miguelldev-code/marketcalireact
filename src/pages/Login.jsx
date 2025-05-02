@@ -19,7 +19,7 @@ function Login() {
   return (
     <div
       className="container d-flex justify-content-center align-items-center"
-      style={{ minHeight: "80vh" }}
+      style={{ minHeight: "63vh" }}
     >
       <div
         className="card p-4 shadow-sm"
