@@ -32,7 +32,7 @@ function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a href="/contacto" className="nav-link">
+                <a href="/contactos" className="nav-link">
                   Contacto
                 </a>
               </li>
